@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+ </head>
+
+<body>
+  <header>
+    <div>
+      <div>
+        <h2>Krystian Tłuczek</h2>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li class="selected_value">
+          <a href="./index.html">Strona główna</a>
+        </li>
+        <li><a href="./seriale/index.html">Ulubione seriale</a></li>
+        <li><a href="./ksiazki/index.html">Ulubione książki</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div>
+        <h1>
+          <span>Krystian Tłuczek</span> strona personalna
+        </h1>
+
+        <span>Cześć! Jestem Krystian i
+          <span>lubię Muzyke</span></span>
+      </div>
+
+    </section>
+    <article>
+      <h4><span class="span_decorator">Kilka </span> słów o mnie</h4>
+
+      <p>
+        Jestem absolwentem <b>Technikum Teb w Rzeszowie</b>, które
+        ukończyłem z <i>wyróżnieniem. </i>
+        W wolnych chwilach lubie tworzyć muzykę. Lubię dużo jeść i siedzieć przed komputerem.
+      </p>
+    </article>
+
+    <!-- ZADANIE 2 -->
+    <!-- Proszę skierować studentów na stronę:
+    https://devdocs.io/html/element/ul
+    tam znajduje się przykład zagnieżdżania list-->
+    <article class="article-element">
+      <h4>Moje ulubione seriale</h4>
+      <ul>
+        <li>Naruto</li>
+        <li>One Piece</li>
+        <li>Stranger Things</li>
+      </ul>
+    </article>
+
+    <article class="article-element">
+      <h4>
+        Ranking najlepszych Anime
+      </h4>
+      <ol>
+        <li>Naruto.</li>
+        <li>One Piece.</li>
+        <li>Darling in the FranXX.</li>
+      </ol>
+    </article>
+
+    <!-- ZADANIE 3 -->
+    <article class="article-element">
+      <h4>Moje ulubione seriale</h4>
+      <ul>
+        <li>
+          Naruto
+          <a href="https://wbijam.pl/anime-naruto.html">Naruto</a>
+        </li>
+        <li>
+          One Piece
+          <a href="https://wbijam.pl/anime-onepiece.html">
+            One Piece</a>
+        </li>
+        <li>
+          Darling in the FranXX<a href="https://shinden.pl/series/51227-darling-in-the-franxx">
+            Darling in the FranXX</a>
+        </li>
+      </ul>
+    </article>
+
+    <!-- ZADANIE 4 -->
+    <!-- Pytanie do studentów: Jak sprawić aby tablica posiadała ramki?-->
+    <article class="article-element">
+      <h4>Moje ścieżka nauki</h4>
+
+      <table>
+        <tr>
+          <th>Data</th>
+          <th>Szkoła</th>
+        </tr>
+        <tr>
+          <td>2011 - obecnie</td>
+          <td>WSIZ</td>
+        </tr>
+        <tr>
+          <td>2008 - 2011</td>
+          <td>Technikum Teb Rzeszów</td>
+        </tr>
+        <tr>
+          <td>2002 - 2008</td>
+          <td>Szkoła podstawowa nr 17</td>
+        </tr>
+      </table>
+    </article>
+
+    <!--    ZADANIE 4.1 -->
+    <article class="article-element">
+      <h4>Pusta tabelka</h4>
+      <table>
+        <tr>
+          <td></td>
+          <td rowspan="2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+
+          <td rowspan="2" colspan="2"></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td></td>
+        </tr>
+      </table>
+    </article>
+    <!-- ZADANIE 5 -->
+    <article class="article-element">
+      <div>
+        <h4>Moje ulubione seriale</h4>
+
+        <ul>
+          <li>
+            Naruto
+            <a href="https://wbijam.pl/anime-naruto.html">Naruto</a>
+          </li>
+          <li>
+            One Piece
+            <a href="https://wbijam.pl/anime-onepiece.html">
+              One Piece</a>
+          </li>
+          <li>
+            Darling in the FranXX<a href="https://shinden.pl/series/51227-darling-in-the-franxx">
+              Darling in the FranXX</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="https://onepiece.fandom.com/pl/wiki/Saga_o_Kraju_Wano"
+        height="200" />
+    </article>
+  </main>
+
+  <article class="article-element">
+    <h4>Moje ulubione seriale</h4>
+    <div>
+      <!-- ZADANIE 8 -->
+
+      <h4>Your news form</h4>
+      <form action="." method="post">
+        <div>
+          <label>Name: </label>
+          <input type="text" required />
+        </div>
+        <div>
+          <label>Email: </label>
+          <input type="email" required />
+        </div>
+        <div>
+          <label>Do you want to get news daily? </label>
+          <input type="checkbox" checked />
+        </div>
+        <div>
+          <label>Do you want to get 10% dicount? </label>
+          <input type="radio" />
+        </div>
+        <div>
+          <label>Select first news day</label>
+          <input type="date" requiredq />
+        </div>
+        <div>
+          <input type="submit" value="Subscribe!" />
+        </div>
+      </form>
+    </div>
+    <aside>Menu boczne</aside>
+  </article>
+
+  <footer>© 2002-2023 KRSTLCZ.pl</footer>
+  <hr />
+  <hr />
+</body>
+
+</html>

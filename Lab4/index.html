@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="book.js"></script>
+    <script src="student.js"></script>
+    <script src="car.js"></script>
+    <script src="rectangle.js"></script>
+</head>
+<body>
+    <script>
+        function sumRectangle(){
+            let element_a = document.getElementById("bok_a").value;
+            let element_b = document.getElementById("bok_b").value;
+            let rectangle = new Rectangle(parseInt(element_a), parseInt(element_b));
+
+
+            document.getElementById("result").innerHTML = rectangle.print();
+        }
+    </script>
+
+    <input type="text" id="bok_a">
+    <input type="text" id="bok_b">
+    <p id="result"> </p>
+
+    <button onclick="sumRectangle()"> Oblicz pole</button>
+
+
+</body>
+</html>

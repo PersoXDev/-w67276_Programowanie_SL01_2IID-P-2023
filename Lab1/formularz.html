@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1> Your news form </h1>
+    <form method="post">
+        <label> Name: </label>
+        <input type="text" placeholder="Type your name">
+        <label> Email: </label>
+        <input type="email" placeholder="Type your email">
+
+        <div>
+            <label> Do you want to get news daily?</label>
+            <input type="checkbox">
+        </div>
+
+        <div>
+            <label> Do you want to get 10% discount? </label>
+            <input type="radio">
+        </div>
+
+        <div>
+            <label> Select first news day </label>
+            <input type="date">
+        </div>
+
+        <input type="button" value="Subscribe!">
+
+    </form>
+</body>
+</html>

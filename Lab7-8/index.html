@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--Zadanie 1-->
+
+<form style="display: flex; flex-direction: column; width: 50%;" onsubmit="submitForm(event)" novalidate>
+    <label> Type your name</label>
+    <input type="text" placeholder="name..." name="name">
+    <span class="error"> </span>
+
+    <label> Type your lastname </label>
+    <input type="text" placeholder="lastname..." name="lastname">
+    <span class="error"> </span>
+
+    <label> Type your email </label>
+    <input type="email" placeholder="email..." name="email">
+    <span class="error"> </span>
+
+    <label> Type your password </label>
+    <input type="password" pattern="/^(?=.*\d).{8,}$/" placeholder="password..." name="password">
+    <span class="error"> </span>
+
+    <label> Type your password </label>
+    <input type="password" pattern="/^(?=.*\d).{8,}$/" placeholder="repeat password..." name="password2">
+    <span class="error"> </span>
+
+    <label> Select your gender</label>
+    <select name="gender">
+        <option value="male">Male</option>
+        <option value="women">Women</option>
+    </select>
+    <span class="error"> </span>
+
+
+    <label> Type your phone number</label>
+    <input type="text" placeholder="number..." name="number">
+    <span class="error"> </span>
+
+    <label> Select your birthday</label>
+    <input type="date" name="birthday">
+    <span class="error"> </span>
+
+    <label> Select your country</label>
+    <input type="text" placeholder="country" id="country" name="country">
+    <span class="error"> </span>
+    <div id="state_div">
+        <label> Type your state</label>
+        <input type="text" placeholder="state..." id="state" name="state" disabled>
+    </div>
+    <label> Type your address</label>
+    <input type="text" placeholder="address..." name="address" id="address" disabled>
+
+    <label> Adres correspondence is the same as address </label>
+    <input type="checkbox" name="checkbox1" id="checkbox1" checked>
+
+    <label hidden name="label_address2" id="label_address2"> Type your correspondence address </label>
+    <input type="text" placeholder="correspondence address..." name="address2" id="address2" disabled hidden>
+
+    <input type="submit" value="Confirm" >
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
